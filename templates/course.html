@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Topics in this Course</h1>
+        <ul class="topics-list">
+            {% for topic in topics %}
+            <li>
+                <a href="/course/{{ course_name }}/{{ topic }}" class="topic-link">{{ topic }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="back-button">
+            <a href="{{ url_for('index') }}">
+                <button class="back-btn">Back to Dashboard</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

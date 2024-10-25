@@ -1,0 +1,49 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Gradient background */
+    color: #ffffff; /* White text color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Vertical layout */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center text */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for the container */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px; /* Padding around the content */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    width: 80%; /* Limit the width of the container */
+    max-width: 800px; /* Max width */
+}
+
+h1 {
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2.5em; /* Larger font size */
+}
+
+p {
+    font-size: 1.2em; /* Adjusted font size for the theory content */
+    line-height: 1.6; /* Increased line height for better readability */
+    margin: 20px 0; /* Space above and below the paragraph */
+}
+
+.finish-btn {
+    background: linear-gradient(to right, #ff416c, #ff4b2b); /* Gradient background for the finish button */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 15px 30px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.5em; /* Larger font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.finish-btn:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c); /* Reverse gradient on hover */
+    transform: translateY(-3px); /* Slight upward movement on hover */
+}

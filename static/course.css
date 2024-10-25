@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+    color: #ffffff; /* White text color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Vertical layout */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center text */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for the container */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px; /* Padding around the content */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    width: 80%; /* Limit the width of the container */
+    max-width: 600px; /* Max width */
+}
+
+h1 {
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2.5em; /* Larger font size */
+}
+
+.topics-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.topics-list li {
+    margin: 15px 0; /* Space between list items */
+}
+
+.topic-link {
+    display: inline-block; /* Make the link behave like a block element */
+    padding: 15px 25px; /* Padding around the link */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from links */
+    color: #ffffff; /* White text color */
+    background: linear-gradient(to right, #ff512f, #dd2476); /* Gradient background for links */
+    transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+    font-size: 1.2em; /* Larger font size for links */
+}
+
+.topic-link:hover {
+    background: linear-gradient(to right, #dd2476, #ff512f); /* Reverse gradient on hover */
+    transform: translateY(-3px); /* Slight upward movement on hover */
+}
+
+.back-button {
+    margin-top: 20px; /* Space above the back button */
+}
+
+.back-btn {
+    background: #f44336; /* Red background for back button */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+.back-btn:hover {
+    background: #c62828; /* Darker red on hover */
+}

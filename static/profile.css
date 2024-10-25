@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://via.placeholder.com/1920x1080.png?text=Background+Image') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire background */
+    color: #fff; /* White text color for contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Shadow for better readability */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center the card */
+    align-items: center;
+}
+
+.profile-card {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 20px; /* Rounded corners */
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    text-align: center; /* Center text */
+    width: 90%;
+    max-width: 400px; /* Limit max width */
+}
+
+.profile-pic {
+    border-radius: 50%; /* Circular profile picture */
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+h1 {
+    margin: 10px 0; /* Margin for spacing */
+    font-size: 2em; /* Font size for score */
+    color: #ffcc00; /* Gold color for the score */
+}
+
+.stars-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center stars */
+    margin-top: 10px; /* Space above stars */
+}
+
+.star {
+    font-size: 1.5em; /* Increase star size */
+    margin: 0 2px; /* Space between stars */
+}
+
+.filled {
+    color: #ffcc00; /* Gold color for filled stars */
+}
+
+.dashboard-btn {
+    display: inline-block; /* Make it a block element */
+    background: #28a745; /* Green button color */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    margin-top: 20px; /* Space above button */
+    transition: background 0.3s; /* Smooth transition */
+}
+
+.dashboard-btn:hover {
+    background: #218838; /* Darker green on hover */
+}
+body {
+    background-color: #06bed6; /* New background color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}

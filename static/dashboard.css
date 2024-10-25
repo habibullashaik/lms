@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Warm gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+}
+
+h1 {
+    color: #fff; /* White color for the heading */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+    justify-content: center; /* Center align the buttons */
+    gap: 20px; /* Space between buttons */
+}
+
+.course-link {
+    text-decoration: none; /* Remove underline from links */
+}
+
+.course-btn {
+    width: 150px; /* Fixed width for the course buttons */
+    height: 150px; /* Fixed height for the course buttons */
+    background-size: cover; /* Cover the whole button with the image */
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    align-items: flex-end; /* Align text to the bottom */
+    justify-content: center; /* Center align the text */
+    color: #fff; /* White text color */
+    font-weight: bold; /* Bold text */
+    padding: 10px; /* Padding around the text */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+}
+
+.course-btn:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.logout-container {
+    margin-top: 20px; /* Space above the logout button */
+}
+
+.logout-btn {
+    background: #ff4d4d; /* Red background for logout button */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+.logout-btn:hover {
+    background: #e60000; /* Darker red on hover */
+}

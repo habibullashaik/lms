@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='profile.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-pic"> <!-- Replace with your desired cartoon image -->
+            <h1>Your Score: {{ score }}</h1>
+            <p>User Name: {{ session.username }}</p> <!-- Displaying username -->
+            <p>Your Details: {{ user_details }}</p> <!-- Additional user details -->
+            <div class="stars-container">
+                {% for i in range(5) %}
+                    {% if i < (score // 10) %}
+                        <span class="star filled">⭐</span>
+                    {% else %}
+                        <span class="star">⭐</span>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <a href="{{ url_for('index') }}" class="dashboard-btn">Go back to Dashboard</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+</head>
+<body>
+    <h1>Course Dashboard</h1>
+    <div class="courses">
+        {% for course_name in courses %}
+        <a href="{{ url_for('course_topics', course_name=course_name) }}" class="course-link">
+            <div class="course-btn" style="background-image: url('/static/images/{{ course_name|lower }}.png');">
+                <span>{{ course_name }}</span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+
+    <div class="logout-container">
+        <a href="{{ url_for('logout') }}">
+            <button class="logout-btn">Logout</button>
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0); /* Unique gradient background */
+    color: #333; /* Dark text color for contrast */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Vertical layout */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center text */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px; /* Padding around the content */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    width: 80%; /* Limit the width of the container */
+    max-width: 600px; /* Max width */
+}
+
+h1 {
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2.5em; /* Larger font size */
+    color: #ff6f61; /* Unique color for the heading */
+}
+
+textarea {
+    width: 100%; /* Full width */
+    height: 150px; /* Height for the textarea */
+    padding: 10px; /* Padding inside the textarea */
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid #ff6f61; /* Border color matching the heading */
+    resize: none; /* Disable resizing */
+    font-size: 1.1em; /* Slightly larger font size */
+    margin-bottom: 20px; /* Space below the textarea */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+textarea:focus {
+    border-color: #ff3d4d; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+.submit-btn {
+    background: #6a82fb; /* Unique button color */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 15px 30px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.5em; /* Larger font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.submit-btn:hover {
+    background: #fc5c7d; /* Change color on hover */
+    transform: translateY(-3px); /* Slight upward movement on hover */
+}

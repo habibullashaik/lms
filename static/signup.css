@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white for the form container */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    width: 400px; /* Fixed width for the container */
+    text-align: center; /* Center all text */
+}
+
+h1 {
+    color: #ff7e5f; /* Color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+form {
+    margin-bottom: 20px; /* Space below the form */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Full width inputs */
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ff7e5f; /* Border color matching the gradient */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 16px;
+    transition: border 0.3s; /* Smooth transition for the border */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #feb47b; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+button {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Button gradient */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.3s; /* Smooth transition for background and transform */
+    width: 100%; /* Full width button */
+}
+
+button:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f); /* Inverted gradient on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+p {
+    color: #ff7e5f; /* Color for the paragraph text */
+    margin-top: 20px; /* Space above the paragraph */
+}
+
+a {
+    color: #ff7e5f; /* Color for the link */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline link on hover */
+}
